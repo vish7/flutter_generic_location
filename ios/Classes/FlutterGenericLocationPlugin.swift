@@ -74,7 +74,7 @@ public class FlutterGenericLocationPlugin: NSObject, FlutterPlugin,FlutterStream
     }
 
     public func askForLocationPermission() {
-        locationManager?.requestAlwaysAuthorization()
+        locationManager?.requestWhenInUseAuthorization()
     }
 
     public func getLocation() {
